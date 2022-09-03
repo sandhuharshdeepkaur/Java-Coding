@@ -59,7 +59,7 @@ public class AdvancePatterns{
 
     // Program to print Floyd's Triangle
 
-    public static void Triangle(int n){                         // Method to print pattern
+    public static void Triangle(int n){                         // Method to print Floyd's Triangle
         
         int counter = 1;                                       // Taking variable to print numbers
         for (int i = 1; i <= n; i++){                         // Outer loop for lines             
@@ -72,15 +72,37 @@ public class AdvancePatterns{
     }
 
 
+    // Program to print 0-1 Traingle
+
+    public static void triangle01(int n){                        // Method to print o-1 Triangle
+
+        for (int i = 1; i <= n; i++){                           // Outer loop for lines
+            for (int j = 1; j <= i; j++){                      // Inner loop for numbers
+                if ((i+j) % 2 == 0){                          // Condition for printing 1
+                    System.out.print("1" + " ");             // Printing 1
+                }else{
+                    System.out.print("0" + " ");           // Printing 2
+                }
+            }
+            System.out.println();                        // Next line
+        }
+    }
+
+
+    }
+
+
     
     public static void main(String args[]){                                   // Main Function
         
-        //Hollow_Rec(4,5);                                                  // Calling the Method with input
+        Hollow_Rec(4,5);                                                  // Calling the Method with input
         
-        //Holinvpattern(4);
+        Holinvpattern(4);
 
-        //pattern3(5);
+        pattern3(5);
 
         Triangle(5);
+
+        triangle01(5);
     }
 } 
