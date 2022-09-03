@@ -26,16 +26,18 @@ public class AdvancePatterns{
     }
 
 
+     // Program for Hollow Inverted PyramidPattern
+
 
     public static void Holinvpattern(int n){
         for (int i = 1; i <= n; i++){                                      // Outer Loop for lines
             for (int j = 1; j <= n-i; j++){                               // Inner Loop for Spaces
-            System.out.print(" ");
+            System.out.print(" ");                                     // Printing the Spaces
             }
-            for (int j = 1; j <= i; j++){                                // Inner Loop for Stars
-            System.out.print("*");
+            for (int j = 1; j <= i; j++){                               // Inner Loop for Stars
+            System.out.print("*");                                   // Printing the Stars
             }
-            System.out.println();
+            System.out.println();                                      // Next line
         }
     }
 } 
