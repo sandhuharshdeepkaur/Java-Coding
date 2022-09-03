@@ -1,10 +1,10 @@
 package Java;
 
-public class AdPattern {
+public class butterfly {
 
     // Program to print Butterfly pattern 
 
-    public static void butterfly(int n){
+    public static void butterflypattern(int n){
 
         for (int i = 1; i <= n; i++){                       // 1st Half
             
@@ -36,7 +36,7 @@ public class AdPattern {
     }
 
     public static void main(String args[]){
-        butterfly(5);                             // Input
+        butterflypattern(25);                             // Input
     }
     
 
