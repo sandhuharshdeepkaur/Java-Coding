@@ -1,20 +1,12 @@
 package Java;
 
 
-// Program to Print Hollow Rectangle
+
 
 public class AdvancePatterns{
 
-    public static void main(String args[]){                                            // Main Function
-        
-        Hollow_Rec(4,5);                                         // Calling the Method with input
-        
-        Holinvpattern(4);
+    // Program to Print Hollow Rectangle
 
-        pattern3(5);
-    }
-    
-    
     public static void Hollow_Rec(int TotalRows, int TotalCols){                     // Method to create Hollow Rectangle
 
         for (int i = 1; i <= TotalRows; i++){                                       // Outer loop for Lines
@@ -58,9 +50,37 @@ public class AdvancePatterns{
     public static void pattern3(int n){
         for (int i = 1; i <= n; i++){
             for (int j = 1; j <= n-i+1; j++){
-                System.out.print(j + " ");
+                System.out.print(j);
             }
             System.out.println();
         }
+    }
+
+
+    // Program to print Floyd's Triangle
+
+    public static void Triangle(int n){                         // Method to print pattern
+        
+        int counter = 1;                                       // Taking variable to print numbers
+        for (int i = 1; i <= n; i++){                         // Outer loop for lines             
+            for (int j = 1; j <= i; j++ ){                   // Inner loop for numbers
+                System.out.print(counter + " ");            // Printing the output
+                counter++;                                 // Incrementing the numbers without repeatation
+            }
+            System.out.println();                         // Next line
+        }
+    }
+
+
+    
+    public static void main(String args[]){                                   // Main Function
+        
+        //Hollow_Rec(4,5);                                                  // Calling the Method with input
+        
+        //Holinvpattern(4);
+
+        //pattern3(5);
+
+        Triangle(5);
     }
 } 
