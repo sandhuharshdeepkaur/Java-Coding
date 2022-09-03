@@ -1,8 +1,5 @@
 package Java;
 
-
-
-
 public class AdvancePatterns{
 
     // Program to Print Hollow Rectangle
