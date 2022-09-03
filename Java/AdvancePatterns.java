@@ -10,6 +10,8 @@ public class AdvancePatterns{
         Hollow_Rec(4,5);                                         // Calling the Method with input
         
         Holinvpattern(4);
+
+        pattern3(5);
     }
     
     
@@ -47,6 +49,18 @@ public class AdvancePatterns{
             }
 
             System.out.println();                                   // Next line
+        }
+    }
+
+
+    // Program to print Half Pyramid of numbers
+
+    public static void pattern3(int n){
+        for (int i = 1; i <= n; i++){
+            for (int j = 1; j <= n-i+1; j++){
+                System.out.print(j + " ");
+            }
+            System.out.println();
         }
     }
 } 
