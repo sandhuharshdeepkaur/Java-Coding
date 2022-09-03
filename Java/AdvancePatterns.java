@@ -89,9 +89,6 @@ public class AdvancePatterns{
     }
 
 
-    }
-
-
     
     public static void main(String args[]){                                   // Main Function
         
