@@ -89,11 +89,11 @@ public class AdvancePatterns{
     
     public static void main(String args[]){                                   // Main Function
         
-        Hollow_Rec(4,5);                                                  // Calling the Method with input
+        Hollow_Rec(4,5);                                // Calling Hollow Rectangle method with input                              // Calling the Method with input
         
-        Holinvpattern(4);
+        Holinvpattern(4);                                                 // Calling Method with input
 
-        pattern3(5);
+        pattern3(5);                                                     // Calling Method with input
 
         Triangle(5);
 
