@@ -86,6 +86,21 @@ public class AdvancePatterns{
     }
 
 
+    // Program to print Rhombus
+
+    public static void rhombus(int n){
+
+        for (int i = 1; i <= n; i++){               //For Lines
+            for(int j = 1; j <= n-i; j++){         // For Spaces
+                System.out.print(" ");
+            }
+            for(int j = 1; j <= n; j++){      // For stars
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+    }
     
     public static void main(String args[]){                                   // Main Function
         
@@ -98,5 +113,7 @@ public class AdvancePatterns{
         Triangle(5);
 
         triangle01(5);
+
+        rhombus(5);
     }
 } 
