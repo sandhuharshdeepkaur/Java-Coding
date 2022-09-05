@@ -101,6 +101,21 @@ public class AdvancePatterns{
         }
         
     }
+
+
+    public static void holloRhmbuso(int n){
+
+        for(int i = 1; i <= n; i++){                                   // Lines
+
+            for(int j = 1; j <= n-i; j++){                           // Spaces
+                    System.out.print(" ");
+                }
+
+            for(int j = )
+        }
+        System.out.println();
+    }
+}
     
     public static void main(String args[]){                                   // Main Function
         
@@ -115,5 +130,7 @@ public class AdvancePatterns{
         triangle01(5);
 
         rhombus(5);
+
+        holloRhmbuso(5);
     }
 } 
