@@ -111,19 +111,26 @@ public class AdvancePatterns{
                     System.out.print(" ");
                 }
 
-            for(int j = )
+            for(int j = 1; j <= n; j++){
+                if(i == 1 || i == n || j == 1 || j == n){
+                    System.out.print("*");
+                }else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
         }
-        System.out.println();
+        
     }
-}
+
     
     public static void main(String args[]){                                   // Main Function
         
-        Hollow_Rec(4,5);                                // Calling Hollow Rectangle method with input                              // Calling the Method with input
+        Hollow_Rec(4,5);
         
-        Holinvpattern(4);                                                 // Calling Method with input
+        Holinvpattern(4);                                                 
 
-        pattern3(5);                                                     // Calling Method with input
+        pattern3(5);                                                     
 
         Triangle(5);
 
