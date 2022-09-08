@@ -1,6 +1,6 @@
 package Java;
 
-// Program to print diamond pattern of stars
+// Program to print Diamond pattern of stars
 
 public class diamond{
 
@@ -34,23 +34,10 @@ public static void diamondi(int n){
 
 // Program for printing number pyramid
 
-public static void numpy(int n){
 
-    for (int i = 1; i <= n; i++){                       // Lines
-        for(int j = 1; j <= (n-i); j++){               // Spaces
-            System.out.print(" ");
-        }
-
-        for(int j = 1; j <= i; j++){                 // Numbers
-            System.out.print(i  + " ");
-        }
-        System.out.println();
-    }
-}
 
     public static void main(String args[]){
 
-        numpy(9);
 
         diamondi(7);
     }
