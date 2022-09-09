@@ -37,8 +37,6 @@ public static void diamondi(int n){
 
 
     public static void main(String args[]){
-
-
         diamondi(7);
     }
 }

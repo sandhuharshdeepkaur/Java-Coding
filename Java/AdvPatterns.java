@@ -48,6 +48,6 @@ public class AdvPatterns {
     
         numpy(9);
 
-        palinpattern(5);
+        palinpattern(8);
 }
 }
