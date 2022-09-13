@@ -9,8 +9,6 @@
 
 package Java;
 
-import javax.print.attribute.Size2DSyntax;
-
 public class Arrays{
 
     public static void main(String args[]){

@@ -1,8 +1,5 @@
 package Java;
 
-import java.util.Scanner;
-
-import javax.swing.SpinnerDateModel;
 
 public class AdvPatterns {
 
@@ -46,13 +43,7 @@ public class AdvPatterns {
     }
 
 
-    public static void hollotriangle(){
-
-        try(Scanner sc = new Scanner (System.in)){
-
-            System.out.println("Enter row number of a triangle :");
-            
-            int n = sc.nextInt();
+    public static void hollotriangle(int n ){
 
         for (int i = 1; i <= n; i++){
 
@@ -67,7 +58,7 @@ public class AdvPatterns {
             System.out.println();
         }
     }
-}
+
 
 
         public static void pattern2(int n){
@@ -91,8 +82,8 @@ public class AdvPatterns {
             }
         }
 
-        public static void patte(){
-            int n = 4;
+        public static void patte(int n){
+            
             for (int i = 1; i<= n; i++){
                 for(int j = n; j > i; j--){
                     System.out.print(" ");
@@ -110,12 +101,12 @@ public class AdvPatterns {
 
         palinpattern(8);
 
-        hollotriangle();
+        hollotriangle(5);
 
         pattern2(5);
 
         pa(5);
 
-        patte();
+        patte(4);
 }
 }

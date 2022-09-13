@@ -2,13 +2,14 @@ package Java;
 
 import java.util.Scanner;
 
-import javax.sound.sampled.SourceDataLine;
-
 public class palindrome {
 
 
-    public static void palindro(int num){
-        
+    public static void palindro(){
+
+        try(Scanner sc = new Scanner(System.in)){
+            System.out.println("Enter number to check it is palindrome or not :");
+            int num = sc.nextInt();
 
             int temp, rev = 0, Ld;
             
@@ -20,15 +21,16 @@ public class palindrome {
             }
 
             if(temp == rev){
-                System.out.println("Palindrome");
+                System.out.println(temp + " is Palindrome number.");
             }else{
-                System.out.println("Not a palindrome");
+                System.out.println(temp +" is Not a palindrome number.");
             }
+        }
         }
     
 
     public static void main(String args[]){
-        palindro(86);
+        palindro();
         
     }
     
