@@ -69,16 +69,6 @@ public class AdvPatterns {
     }
 }
 
-        public static void pattern1(int n){
-            int counter = 5;
-            for(int i = 1; i <= n; i++){
-                for (int j = 1; j <= (n-i)+1; j++){
-                    System.out.print(counter+ " ");
-                    counter--;
-                }
-                System.out.println();
-            }
-        }
 
         public static void pattern2(int n){
             for(int i = 1; i <= n; i++){
@@ -121,8 +111,6 @@ public class AdvPatterns {
         palinpattern(8);
 
         hollotriangle();
-
-        pattern1(5);
 
         pattern2(5);
 
