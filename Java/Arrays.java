@@ -12,6 +12,7 @@ package Java;
 import java.util.*;
 
 // Program to print Input Array 
+
 public class Arrays{
 
     public static void markarrays(){
