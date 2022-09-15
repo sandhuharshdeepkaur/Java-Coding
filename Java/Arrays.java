@@ -11,9 +11,10 @@ package Java;
 
 import java.util.*;
 
+// Program to print Input Array 
 public class Arrays{
 
-    public static void main(String args[]){
+    public static void markarrays(){
 
         int marks[] = new int [50];
 
@@ -25,6 +26,28 @@ public class Arrays{
 
             System.out.println("Marks of phy, chem, math are:" + marks[0]+" "+ marks[1]+ " "+ marks[2]);
         }
+        }
+
+    // Program to print Updated Arrays
+
+        public static void update(int marks[]){
+            
+            for (int i = 0; i < marks.length; i++){
+                marks[i] = marks[i]+1;
+            }
+        }
+
+
+        public static void main(String args[]){
+            //markarrays();
+
+            int marks[] = {99, 98, 86, 13};
+            update(marks);
+
+            for(int i = 0; i<marks.length; i++){
+            System.out.println("Updated marks:" + marks[i]+" ");
+            }
+            System.out.println();
         }
     }
 
