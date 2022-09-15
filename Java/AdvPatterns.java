@@ -1,7 +1,5 @@
 package Java;
 
-import java.net.SocketTimeoutException;
-
 public class AdvPatterns {
 
     // Program to print Pyramid numbers

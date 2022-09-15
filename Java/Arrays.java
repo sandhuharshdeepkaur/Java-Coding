@@ -9,23 +9,22 @@
 
 package Java;
 
+import java.util.*;
+
 public class Arrays{
 
     public static void main(String args[]){
 
-        // int marks[] = new int [50];
+        int marks[] = new int [50];
 
-        int num[] = {1, 2 ,3};
+        try(Scanner sc = new Scanner(System.in)){
 
-        int morenum[] = {4, 5, 6};
+            marks [0] = sc.nextInt();
+            marks [1] = sc.nextInt();
+            marks [2] = sc.nextInt();
 
-        String Fruits[] = {"apple", "orange", "guava"};
-
-        System.out.println(num [0]);
-
-        System.out.println(morenum[1]);
-
-        System.out.println(Fruits[2]);
+            System.out.println("Marks of phy, chem, math are:" + marks[0]+" "+ marks[1]+ " "+ marks[2]);
+        }
         }
     }
 
