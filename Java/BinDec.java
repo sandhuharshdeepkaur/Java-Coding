@@ -1,6 +1,6 @@
 package Java;
 
-public class DecBin {
+public class BinDec {
 
     // Program to print conversion of Binary number to Decimal number
 
