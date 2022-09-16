@@ -19,7 +19,7 @@ public class BinDec {
     }
 
     //Program to print Binary number of given Decimal number
-    
+
     public static void DectoNum(int n){
         
         int myNum = n;
@@ -43,7 +43,7 @@ public class BinDec {
 
         // BintoDec(1001);
 
-        DectoNum(7);
+        DectoNum(15);
 
     }
 }
