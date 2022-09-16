@@ -40,7 +40,7 @@ public class BinDec {
     // Program to check if a number is even or odd
 
     public static boolean isEven(int n){
-        
+
         for(int i = 0; i <= n; i++){
             if(n % 2 != 0){
             return false;
