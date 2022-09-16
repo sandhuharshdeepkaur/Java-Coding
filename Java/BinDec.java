@@ -15,7 +15,7 @@ public class BinDec {
             pow++;
             binNum = binNum/10;
         }
-        System.out.println("Decimal number of "+ myNum + " = " + dec);
+        System.out.println("Decimal number of " + myNum + " = " + dec);
     }
 
     //Program to print Binary number of given Decimal number
@@ -33,7 +33,7 @@ public class BinDec {
             n /= 2;
         }
 
-        System.out.println("Binary number of "+ myNum + " = " + binNum);
+        System.out.println("Binary number of " + myNum + " = " + binNum);
     }
 
 
