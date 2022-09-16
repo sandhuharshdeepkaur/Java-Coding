@@ -37,13 +37,27 @@ public class BinDec {
         System.out.println("Binary number of " + myNum + " = " + binNum);
     }
 
+    public static boolean isEven(int n){
+
+
+        if (n == 2){
+            return true;
+        }
+        for(int i = 0; i <= n; i++){
+            if(n % 2 != 0){
+            return false;
+        }
+    }
+    return true;
+    }
 
 
     public static void main(String args[]){
 
         // BintoDec(1001);
 
-        DectoNum(15);
+        //DectoNum(15);
 
+        System.out.println(isEven(99));
     }
 }
