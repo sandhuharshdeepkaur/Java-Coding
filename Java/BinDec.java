@@ -54,9 +54,9 @@ public class BinDec {
 
     public static void main(String args[]){
 
-        // BintoDec(1001);
+        BintoDec(1001);
 
-        //DectoNum(15);
+        DectoNum(15);
 
         System.out.println(isEven(99));
     }
