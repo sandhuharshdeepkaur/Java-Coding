@@ -41,6 +41,7 @@ public class AdvPatterns {
         }
     }
 
+    // Program to print Hollow Triangle Pattern
 
     public static void hollotriangle(int n ){
 
@@ -58,7 +59,7 @@ public class AdvPatterns {
         }
     }
 
-
+    // Program to print Number Triangle
 
         public static void pattern2(int n){
             for(int i = 1; i <= n; i++){

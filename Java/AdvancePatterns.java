@@ -24,7 +24,6 @@ public class AdvancePatterns{
 
      // Program for Hollow Inverted PyramidPattern
 
-
     public static void Holinvpattern(int n){
 
         for (int i = 1; i <= n; i++){                                      // Outer Loop for lines
@@ -102,6 +101,7 @@ public class AdvancePatterns{
         
     }
 
+    // Program to print Hollow Rhombus pattern
 
     public static void holloRhmbuso(int n){
 
