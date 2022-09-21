@@ -93,10 +93,22 @@ public class AdvPatternsofnums {
             }
         }
 
+        public static void trianglr01(int n){
+            for (int i = 1; i <= n; i++){
+                for (int j = 1; j <= i; j++){
+                    if ((i+j) % 2 == 0){
+                        System.out.print("1 ");
+                    }else{
+                        System.out.print("0 ");
+                    }
+                }
+                System.out.println();
+            }
+        }
 
     public static void main(String args[]){
     
-        numpy(9);
+        /* numpy(9);
 
         palinpattern(8);
 
@@ -106,6 +118,8 @@ public class AdvPatternsofnums {
 
         Triangle(5);
 
-        pattern3(5);
+        pattern3(5); */
+
+        trianglr01(5);
 }
 }
