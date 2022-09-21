@@ -41,24 +41,6 @@ public class AdvPatterns {
         }
     }
 
-    // Program to print Hollow Triangle Pattern
-
-    public static void hollotriangle(int n ){
-
-        for (int i = 1; i <= n; i++){
-
-            for(int j = 1; j <= i; j++){
-
-                if (j == 1 || i == j || i == n){
-                    System.out.print("*");
-                }else{
-                    System.out.print(" ");
-                }
-            }
-            System.out.println();
-        }
-    }
-
     // Program to print Number Triangle
 
         public static void pattern2(int n){
@@ -70,44 +52,47 @@ public class AdvPatterns {
             }
         }
 
-        public static void pa(int n){
-            for(int i = 1; i <= n; i++){
-                for (int j = 1; j < i; j++){
-                    System.out.print(" ");
+    // Program to print 0-1 Traingle
+
+    public static void triangle01(int n){                        // Method to print o-1 Triangle
+
+        for (int i = 1; i <= n; i++){                           // Outer loop for lines
+            for (int j = 1; j <= i; j++){                      // Inner loop for numbers
+                if ((i+j) % 2 == 0){                          // Condition for printing 1
+                    System.out.print("1" + " ");             // Printing 1
+                }else{
+                    System.out.print("0" + " ");           // Printing 2
                 }
-                for (int j = n; j >= i; j--){
-                    System.out.print("*");
+            }
+            System.out.println();                        // Next line
+        }
+    }
+
+    // Program to print Floyd's Triangle
+
+        public static void Triangle(int n){                         // Method to print Floyd's Triangle
+        
+        int counter = 1;                                       // Taking variable to print numbers
+        for (int i = 1; i <= n; i++){                         // Outer loop for lines             
+            for (int j = 1; j <= i; j++ ){                   // Inner loop for numbers
+                System.out.print(counter + " ");            // Printing the output
+                counter++;                                 // Incrementing the numbers without repeatation
+            }
+            System.out.println();                         // Next line
+        }
+    }
+
+    // Program to print Half Pyramid of numbers
+
+        public static void pattern3(int n){
+            for (int i = 1; i <= n; i++){
+                for (int j = 1; j <= n-i+1; j++){
+                    System.out.print(j);
                 }
                 System.out.println();
             }
         }
 
-        public static void patte(int n){
-            
-            for (int i = 1; i<= n; i++){
-                for(int j = n; j > i; j--){
-                    System.out.print(" ");
-                    }
-                for (int j = 1; j <= (i*2)-1; j++){
-                    System.out.print("*");
-                }
-                System.out.println();
-            }
-        }
-
-        public static void traingle01(int n){
-
-            for(int i = 1; i <= n; i++){
-                for(int j = 1; j <= i; j++){
-                    if((i+j) % 2 == 0 ){
-                        System.out.print("1 ");
-                    }else{
-                        System.out.print("0 ");
-                    }
-                }
-                System.out.println();
-            }
-        }
 
     public static void main(String args[]){
     
@@ -115,14 +100,12 @@ public class AdvPatterns {
 
         palinpattern(8);
 
-        hollotriangle(5);
-
         pattern2(5);
+        
+        triangle01(5);
 
-        pa(5);
+        Triangle(5);
 
-        patte(4);
-
-        traingle01(5);
+        pattern3(5);
 }
 }
