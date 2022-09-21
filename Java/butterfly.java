@@ -36,8 +36,8 @@ public class butterfly {
     }
 
     public static void main(String args[]){
-        butterflypattern(25);                           // Input
-    }
-    
 
+        butterflypattern(25);                           // Input
+        
+    }
 }
