@@ -32,11 +32,9 @@ public static void diamondi(int n){
     }
 }
 
-// Program for printing number pyramid
-
-
-
     public static void main(String args[]){
-        diamondi(10);
+
+        //diamondi(10);
+
     }
 }
