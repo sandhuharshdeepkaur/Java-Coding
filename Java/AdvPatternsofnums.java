@@ -1,6 +1,6 @@
 package Java;
 
-public class AdvPatterns {
+public class AdvPatternsofnums {
 
     // Program to print Pyramid numbers
 
