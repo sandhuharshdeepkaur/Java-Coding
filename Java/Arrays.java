@@ -21,6 +21,7 @@ public class Arrays{
 
         try(Scanner sc = new Scanner(System.in)){
 
+            System.out.println("Enter marks of Physics, Chemistry, Mathematics : ");
             marks [0] = sc.nextInt();
             marks [1] = sc.nextInt();
             marks [2] = sc.nextInt();
@@ -38,17 +39,34 @@ public class Arrays{
             }
         }
 
+        //Program to print Larget of the array
+
+        public static int getLargest (int numbers []){
+
+            int Largest = Integer.MIN_VALUE;
+
+            for(int i = 0; i < numbers.length; i++){
+                if (Largest < numbers[i]){
+                    Largest = numbers[i];
+                }
+            }
+            return Largest;
+        }
+
 
         public static void main(String args[]){
-            //markarrays();
+
+            markarrays();
 
             int marks[] = {99, 98, 86, 13};
             update(marks);
-
             for(int i = 0; i<marks.length; i++){
             System.out.println("Updated marks:" + marks[i]+" ");
             }
             System.out.println();
+
+            int numbers[] = {1,2,3,3,54};
+            System.out.println("Largest value of the array is: "+ getLargest(numbers));
         }
     }
 
