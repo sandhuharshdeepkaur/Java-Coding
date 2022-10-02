@@ -5,7 +5,7 @@ public class OOPs{
     public static void main(String args[]){
         Pen p1 = new Pen();
         p1.setColor("Blue");
-        System.out.println();
+        System.out.println(p1.color);
     }
 
 }
