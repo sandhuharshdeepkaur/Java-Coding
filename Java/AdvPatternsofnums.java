@@ -106,9 +106,10 @@ public class AdvPatternsofnums {
             }
         }
 
+
     public static void main(String args[]){
     
-        /* numpy(9);
+        numpy(9);
 
         palinpattern(8);
 
@@ -118,8 +119,9 @@ public class AdvPatternsofnums {
 
         Triangle(5);
 
-        pattern3(5); */
+        pattern3(5); 
 
         trianglr01(5);
+
 }
 }
