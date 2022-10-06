@@ -21,7 +21,7 @@ public class OOPs{
         s1.Rollno(43);
         System.out.println("Student Roll no.: "+ s1.rollno);
         s1.Marks(70);
-        System.out.println("Physics marks: "+ s1.marks);
+        System.out.println("Physics marks: "+ s1.Submarks);
     }
 
 }
@@ -49,21 +49,21 @@ class Pen{
         String name;
         String subject;
         int rollno;
-        int marks;
+        int Submarks;
 
-        void setName(String Name){
-            name = Name;
+        void setName(String StuName){
+            name = StuName;
         }
 
-        void Subjectname(String Sub){
-            subject = Sub;
+        void Subjectname(String Subname){
+            subject = Subname;
         }
         void Rollno(int Roll_no){
             rollno = Roll_no;
         }
 
-        void Marks(int Submarks){
-            marks = Submarks; 
+        void Marks(int marks){
+            Submarks = marks; 
         }
     }
 
