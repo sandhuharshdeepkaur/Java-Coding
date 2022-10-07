@@ -37,6 +37,7 @@ public class Arrays{
             for (int i = 0; i < marks.length; i++){
                 marks[i] = marks[i]+1;
             }
+            System.out.println("Updated marks of subjects are:" + marks[0] + " "+ marks[1] +" "+ marks[2]);
         }
 
         //Program to print Larget of the array
@@ -44,12 +45,17 @@ public class Arrays{
         public static int getLargest (int numbers []){
 
             int Largest = Integer.MIN_VALUE;
+            int Smallest = Integer.MAX_VALUE;
 
             for(int i = 0; i < numbers.length; i++){
                 if (Largest < numbers[i]){
                     Largest = numbers[i];
                 }
+                if(Smallest > numbers[i]){
+                    Smallest = numbers[i];
+                }
             }
+            System.out.println("Smallest value of array is: " + Smallest);
             return Largest;
         }
 
@@ -58,12 +64,8 @@ public class Arrays{
 
             markarrays();
 
-            int marks[] = {99, 98, 86, 13};
+            int marks[] = {99, 98, 86};
             update(marks);
-            for(int i = 0; i<marks.length; i++){
-            System.out.println("Updated marks:" + marks[i]+" ");
-            }
-            System.out.println();
 
             int numbers[] = {1,2,3,3,54};
             System.out.println("Largest value of the array is: "+ getLargest(numbers));
