@@ -26,7 +26,7 @@ public class Arrays{
             marks [1] = sc.nextInt();
             marks [2] = sc.nextInt();
 
-            System.out.println("Marks of phy, chem, math are:" + marks[0]+" "+ marks[1]+ " "+ marks[2]);
+            System.out.println("Marks of phy, chem, math are: " + marks[0]+" "+ marks[1]+ " "+ marks[2]);
         }
         }
 
@@ -37,7 +37,7 @@ public class Arrays{
             for (int i = 0; i < marks.length; i++){
                 marks[i] = marks[i]+1;
             }
-            System.out.println("Updated marks of subjects are:" + marks[0] + " "+ marks[1] +" "+ marks[2]);
+            System.out.println("Updated marks of subjects are: " + marks[0] + " "+ marks[1] +" "+ marks[2]);
         }
 
         //Program to print Larget and Smallest values of the array
