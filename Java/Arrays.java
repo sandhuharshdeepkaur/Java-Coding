@@ -40,7 +40,7 @@ public class Arrays{
             System.out.println("Updated marks of subjects are:" + marks[0] + " "+ marks[1] +" "+ marks[2]);
         }
 
-        //Program to print Larget of the array
+        //Program to print Larget and Smallest values of the array
 
         public static int getLargest (int numbers []){
 
