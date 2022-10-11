@@ -5,7 +5,7 @@
 
 // Creating an array
 
-//dataType arrayName[] = new dataType [Size]
+// DataType ArrayName[] = new DataType [Size]
 
 package Java;
 
