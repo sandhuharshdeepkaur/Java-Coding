@@ -59,18 +59,73 @@ public class Arrays{
             return Largest;
         }
 
+        // Binary Search 
+
+        public static int BinarySearch(int numbers[], int key){
+            int Start = 0; int End = numbers.length - 1;
+            
+            while(Start <= End){
+
+                int mid = (Start + End)/2;
+
+                if(numbers[mid] == key){
+                    return mid;
+                }if(mid > key){
+                    Start = mid + 1;
+                }else{
+                    End = mid - 1;
+                }
+            }
+            
+            return -1;
+        }
+
+
+        // Reverse an Array
+
+        public static void REverse(int numbers[]){
+            int Start = 0; int End = numbers.length - 1;
+
+            while(Start < End){
+
+                int Temp = numbers[End];
+                numbers[End] = numbers[Start];
+                numbers[Start] = Temp;
+
+                Start++;
+                End--;
+
+            }
+            
+        }
+
 
         public static void main(String args[]){
 
-            markarrays();
+        /*  markarrays();
 
             int marks[] = {99, 98, 86};
             update(marks);
 
             int numbers[] = {1,2,3,3,54};
             System.out.println("Largest value of the array is: "+ getLargest(numbers));
+
+            int num [] = {2, 3, 4, 7, 8};
+            int key = 24;
+            System.out.println("Key is at index: " + BinarySearch(num,key)); */
+
+            int num[] = { 2, 4, 5,  7, 8};
+            REverse(num);
+
+            for(int i = 0; i < num.length; i++){
+                System.out.print(num[i] + " ");
+            }
+            System.out.println();
         }
-    }
+        }
+    
+
+
 
 
 
